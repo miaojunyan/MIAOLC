@@ -1,0 +1,26 @@
+//
+//  MIAOLC.pch
+//  MIAOLC
+//
+//  Created by qianfeng on 15/10/10.
+//  Copyright (c) 2015年 苗军艳. All rights reserved.
+//
+
+#ifndef MIAOLC_MIAOLC_pch
+#define MIAOLC_MIAOLC_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "Define.h"
+#import "Netigene.h"
+#import "paseData.h"
+#import "UIImageView+WebCache.h"
+#import "UIView+Extension.h"
+#import "MJYHelper.h"
+#import "UIImage+image.h"
+#import "MJYFactory.h"
+#import "MJYDBManager.h"
+#import "NSDate+Extension.h"
+#import "UIBarButtonItem+Extension.h"
+#endif

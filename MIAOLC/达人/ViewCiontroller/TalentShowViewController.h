@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TalentShowViewController.h
 //  MIAOLC
 //
 //  Created by qianfeng on 15/10/9.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface TalentShowViewController : UIViewController
 
 @end
-

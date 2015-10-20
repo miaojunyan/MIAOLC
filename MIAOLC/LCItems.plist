@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>杂志</string>
+		<key>className</key>
+		<string>MagazineViewController</string>
+		<key>normalImage</key>
+		<string>tabbar_special@2x.png</string>
+		<key>selectedImage</key>
+		<string>tabbar_special_h@2x.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>商店</string>
+		<key>className</key>
+		<string>StoreViewController</string>
+		<key>normalImage</key>
+		<string>tabbar_shop@2x.png</string>
+		<key>selectedImage</key>
+		<string>tabbar_shop_h@2x.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>分享</string>
+		<key>className</key>
+		<string>ShareViewController</string>
+		<key>normalImage</key>
+		<string>tabbar_perfectware@2x.png</string>
+		<key>selectedImage</key>
+		<string>tabbar_perfectware_h@2x.png</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>达人</string>
+		<key>className</key>
+		<string>TalentShowViewController</string>
+		<key>normalImage</key>
+		<string>tabbar_activity@2x.png</string>
+		<key>selectedImage</key>
+		<string>tabbar_activity_h@2x.png</string>
+	</dict>
+</array>
+</plist>

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "CustomViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,8 +16,35 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    CustomViewController *tabBarVC = [[CustomViewController alloc]init];
+    [tabBarVC createContentViewController];
+    [tabBarVC customTabBar];
+    self.window.rootViewController = tabBarVC;
+    [self.window makeKeyAndVisible];
+    //[self beginAnimationView];
     return YES;
+}
+- (void)beginAnimationView {
+    //图片扩大淡出的效果开始
+    //设置一个图片
+    UIImageView *niceView = [[UIImageView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    niceView.image = [UIImage imageNamed:@"LaunchImage1@2x.png"];
+    [self.window addSubview:niceView];
+    [self.window bringSubviewToFront:niceView];
+    [UIView animateWithDuration:3 delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
+        niceView.frame = CGRectMake(-60, -85, LCKScreenWidth + 60 * 2, LCKScreenHeight + 85 * 2);
+        
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:3 animations:^{
+            niceView.alpha = 0.01;
+        } completion:^(BOOL finished) {
+            [niceView removeFromSuperview];
+        }];
+    }];
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

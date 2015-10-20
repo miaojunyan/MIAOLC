@@ -24,6 +24,7 @@
 - (void)customUI {
     [self createSearchView];
     [self createButton];
+    NSLog(@"MMMMMMMMMMM");
 }
 - (void)createSearchView {
     self.searchBar = [MJYSearchBar searchBar];
